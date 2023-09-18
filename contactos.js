@@ -51,3 +51,14 @@ function chaoContacto(chao) {
 }
 chaoContacto(listaContacto[1]);
 console.log(listaContacto);
+
+function actualizarContacto(indiceContacto, nuevaCiudad) {
+  if (listaContacto[indiceContacto]) {
+    listaContacto[indiceContacto].ciudad = nuevaCiudad;
+    console.log("Ciudad actualizado con éxito.");
+  } else {
+    console.log("Índice de contacto no válido.");
+  }
+}
+
+actualizarContacto(1, "Valledupar");
